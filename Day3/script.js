@@ -92,7 +92,6 @@ for (let i = 0; i < bits; i++) {
   }
 
   numbers = [...rating(numbers, bin, i)];
-  console.log(numbers);
   // Stop if only one number left
   if (numbers.length === 1) {
     break;
