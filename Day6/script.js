@@ -3,22 +3,6 @@ input = input.textContent.split(",");
 
 let day = input.map(num => Number(num));
 
-// for (let i = 1; i <= 80; i++) {
-//   let newDay = [];
-//   day.forEach(function (fish) {
-//     const updatedFish = fish - 1;
-//     if (updatedFish < 0) {
-//       newDay.push(6, 8);
-//     } else {
-//       newDay.push(updatedFish);
-//     }
-//   });
-//   day = [...newDay];
-// }
-
-// console.log(day.length);
-
-// Part 2
 let fishPop = {};
 for (let i = 8; i >= 0; i--) {
   fishPop[i] = 0
@@ -42,6 +26,7 @@ day.forEach(function (fish) {
   fishPop[fish] += 1;
 });
 
+// For part 1 update const days to 80
 const days = 256;
 for (let i = 0; i < days; i++) {
   updateFishPop()
