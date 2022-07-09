@@ -25,6 +25,7 @@ for (i = 0; i < input.length; i++) {
 
 // console.log(counter);
 
+// Part 2
 
 let letters;
 let digits;
