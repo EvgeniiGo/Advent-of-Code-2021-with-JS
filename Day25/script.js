@@ -4,7 +4,6 @@ const map = []
 for (let i = 0; i < input.length; i++) {
   map[i] = Array.from(input[i]);
 }
-console.log(input);
 
 let x, y;
 
@@ -13,7 +12,6 @@ let steps = 1;
 // for (let z = 0; z < 1; z++) {
 while (steps > 0) {
   counter += 1;
-  console.log(counter);
   steps = 0;
   for (let i = 0; i < input.length; i++) {
     input[i] = [...map[i]];
